@@ -30,7 +30,7 @@ const Sidebar = () => {
           const { id, url, icon } = link
           return (
             <li key={id}>
-              <a href={url}>{icon}</a>
+              <a href={url} target="_blank" rel="noreferrer">{icon}</a>
             </li>
           )
         })
