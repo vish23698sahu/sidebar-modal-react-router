@@ -3,8 +3,9 @@ import React from 'react'
 const Team = () => {
     return (
         <section>
-            <div>Team</div>
-
+            <section className='container'>
+                <div>Team</div>
+            </section>
         </section>
     )
 }

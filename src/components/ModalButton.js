@@ -6,7 +6,7 @@ const ModalButton = () => {
     const { openModal } = useGlobalContext();
 
     return (
-        <section className='modal-btn-container'>
+        <section className='container'>
             <button className='btn' onClick={openModal} >Show Modal</button>
         </section>
     )
