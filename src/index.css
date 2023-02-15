@@ -147,7 +147,7 @@ Home
 */
 
 main {
-  min-height: 90vh;
+  /* min-height: 40vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,4 +320,10 @@ Sidebar
   .sidebar {
     width: 340px;
   }
+}
+
+
+.modal-btn-container{
+  text-align: center;
+  margin-top:2%;
 }

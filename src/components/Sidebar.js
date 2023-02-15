@@ -2,10 +2,10 @@ import React from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { social, links } from '../data/data'
 import { useGlobalContext } from '../contextAPI/context'
-
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
-  const { isSidebarOpen, closeSidebar } = useGlobalContext();
+  const { isSidebarOpen, setIsSidebarOpen, closeSidebar } = useGlobalContext();
 
   return <aside className={`sidebar ${isSidebarOpen ? 'show-sidebar' : ''} `} >
     <div className='sidebar-header'>
@@ -19,7 +19,7 @@ const Sidebar = () => {
         links.map((link) => {
           const { id, url, text, icon } = link
           return <li key={id}>
-            <a href={url} >{icon} {text}</a>
+            <Link to={url} onClick={() => setIsSidebarOpen(false)} >{icon} {text}</Link>
           </li>
         })
       }
